@@ -15,9 +15,6 @@ int num_training_ex;
 int n=1;
 
 
-
-
-
 layer create_layer(int number_of_neurons)
 {
     layer lay;
@@ -58,8 +55,23 @@ int main(void)
     // Get number of neurons per layer
     for(i=0;i<num_layers;i++)
     {
-        printf("Enter number of neurons in layer[%d]: \n",i+1);
-        scanf("%d",&num_neurons[i]);
+
+        if(i==0)
+        {
+            printf("The number of neurons in first layer are 2 (i.e.the input size)\n");
+            num_neurons[i] = 2;
+        }
+        else if (i==(num_layers-1))
+        {
+            printf("The number of neurons in last layer is 1 (i.e output size)\n");
+            num_neurons[i] = 1;
+        }
+        else
+        {
+            printf("Enter number of neurons in layer[%d]: \n",i+1);
+            scanf("%d",&num_neurons[i]);  
+        }
+        
     }
 
     printf("\n");
@@ -103,10 +115,10 @@ int main(void)
     train_neural_net();
     test_nn();
 
-    if(dinit()!= SUCCESS_DINIT)
+    /*if(dinit()!= SUCCESS_DINIT)
     {
         printf("Error in Dinitialization...\n");
-    }
+    }*/
 
     return 0;
 }
@@ -403,25 +415,28 @@ void back_prop(int p)
 void test_nn(void) 
 {
     int i;
+
     while(1)
     {
-        printf("Enter input to test:\n");
+        printf("Enter input to test: (press ctrl+c to exit) \n");
+
+
 
         for(i=0;i<num_neurons[0];i++)
         {
             scanf("%f",&lay[0].neu[i].actv);
         }
+
         forward_prop();
     }
 }
 
-// TODO: Add different Activation functions
-//void activation_functions()
 
-int dinit(void)
+
+/*int dinit(void)
 {
     // TODO:
     // Free up all the structures
 
     return SUCCESS_DINIT;
-}
+}*/
