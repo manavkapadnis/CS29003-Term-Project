@@ -18,8 +18,6 @@ typedef struct neuron_t
 	float dbias;
 	float dz;
 
-	// TODO: Add function pointer for destructor
-
 } neuron;
 
 neuron create_neuron(int num_out_weights);
