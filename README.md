@@ -75,17 +75,17 @@ Enter the Desired Outputs (Labels) for training example[2]:  1 <br />
 Enter the Desired Outputs (Labels) for training example[3]:  1 <br />
 <br />
 {
-In this space, the model will train and will 
-simultaneously show what are the correspoding outputs 
+In this space, the model will train and will <br>
+simultaneously show what are the correspoding outputs <br>
 when the model is being trained
 }
-<br />
-Enter input to test: 0 0 <br />
+<br>
+Enter input to test: (press ctrl+c to exit) 0 0 <br />
 Output: 0 <br />
-Enter input to test: 0 1 <br />
+Enter input to test: (press ctrl+c to exit) 0 1 <br />
 Output: 1 <br />
-Enter input to test: 1 0 <br />
+Enter input to test: (press ctrl+c to exit) 1 0 <br />
 Output: 1 <br />
-Enter input to test: 1 1 <br />
+Enter input to test: (press ctrl+c to exit) 1 1 <br />
 Output: 1 <br />
 
