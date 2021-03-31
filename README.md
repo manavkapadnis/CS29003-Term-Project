@@ -3,10 +3,10 @@
 ## Usage
 
 Enter the number of Layers in Neural Network: 4 <br />
-Enter number of neurons in layer[1]:  2 <br />
+The number of neurons in first layer are 2 (i.e.the input size) <br />
 Enter number of neurons in layer[2]:  4 <br />
 Enter number of neurons in layer[3]:  4 <br />
-Enter number of neurons in layer[4]:  1 <br />
+The number of neurons in last layer is 1 (i.e output size) <br />
 <br />
 Created Layer: 1 <br />
 Number of Neurons in Layer 1: 2 <br />
@@ -72,7 +72,13 @@ Enter the Inputs for training example[3]:  1 1 <br />
 Enter the Desired Outputs (Labels) for training example[0]:  0 <br />
 Enter the Desired Outputs (Labels) for training example[1]:  1 <br />
 Enter the Desired Outputs (Labels) for training example[2]:  1 <br />
-Enter the Desired Outputs (Labels) for training example[3]:  0 <br />
+Enter the Desired Outputs (Labels) for training example[3]:  1 <br />
+<br />
+{
+In this space, the model will train and will 
+simultaneously show what are the correspoding outputs 
+when the model is being trained
+}
 <br />
 Enter input to test: 0 0 <br />
 Output: 0 <br />
@@ -81,6 +87,5 @@ Output: 1 <br />
 Enter input to test: 1 0 <br />
 Output: 1 <br />
 Enter input to test: 1 1 <br />
-Output: 0 <br />
+Output: 1 <br />
 
-<meta name="google-site-verification" content="APiTrnY8096NLZZykRABFxdIDC_bJcc7LYFJMPljdVo" />
