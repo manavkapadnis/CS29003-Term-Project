@@ -1,4 +1,4 @@
-# Neural-Network-Implementation-of-logic-gates-using-Backpropogation-in-C
+# Neural-Network-Implementation-of-logic-gates-using-backpropogation-in-C
 
 ## Usage
 
